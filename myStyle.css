@@ -1,0 +1,173 @@
+/*Kevin Fraticelli Feliciano 
+ # Est: 843-16-3019*/
+ 
+ 
+/* Cambia el color del fondo y la apariencia de los textos cuerpo <body> de la página Web*/
+body { background-color:#999999; color:#f263af;font-family: Georgia, Times New Roman, serif; }
+
+
+/* Configura los margenes y el ancho de la página a un 75%*/
+body { margin-left: auto; margin-right: auto; width:auto;}
+
+
+
+/* Configura el texto contenido en las etiquetas h1*/
+h1 {  color: #e8193f; text-align:center;
+font-family: Georgia, Times New Roman, serif; border: dotted #13d3a3; padding-top:5px;}
+ 
+ /*selector secundario para seleccionar elementos específicos que son hijos de otros elementos
+específicos. Por ejemplo, esta regla cambiará el texto de elementos <a> que son hijos de elementos
+<h1>, y no afectará a otros elementos <a>:*/
+h1 a {color:#320749;text-align:center; }
+
+
+
+/* Configura el texto contenido en las etiquetas h2*/
+h2 { background-color: #f7cfee;color: #191970;font-family:Arial, Verdana, sans-serif; 
+border: 5px dotted #db74c4; padding-bottom: 10px; padding-top: 10px; text-align:center;}
+
+nav {border-bottom: 8px double #14344f; text-align:center;}
+
+/* Configura el texto contenido en las etiquetas p*/
+p {font-size: 1.2em; font-family: Georgia, Times New Roman, serif;}
+/*Los selectores de descendientes son muy similares a los selectores de secundarios. Los selectores
+secundarios*/
+/*sólo seleccionan descendientes inmediatos; los selectores de descendientes seleccionan todos
+elementos, no sólo descendientes directos.*/
+blockquote span {font-weight: bold;font-size:1.25em;color:#2D2151;}
+
+
+
+.lista2 {font-size:1.25em; color: #c96b08;}
+
+#lista1	{font-size:1.25em; color:#c96b08;}
+
+.lista1	{font-size:1.25em; color:#c96b08;}
+.p1 {font-size:1em; }
+
+.p2 {font-size:1em; }
+ 
+ #lista5 {font-size:1.25em; color: #c96b08;}
+ 
+ .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+ main{ margin: 1em auto;
+	max-width: 900px;
+ display: block;/*para IE */
+ column-count:1;
+ column-width:220px;}
+ 
+ h3 { background-color: #f7cfee;color: #191970;font-family:Arial, Verdana, sans-serif; 
+border: 5px dotted #14344f; padding-bottom: 10px; padding-top: 10px; text-align:center;}
+ 
+ 
+ 
+/* Configura el texto contenido en las etiquetas footer*/
+footer { font-size: small; text-align: center; }
+
+
+/* Modifica el elemento con atributo id="end" */
+#end {font-size:0.8em; font-style:italic; text-align:center;}
+
+
+/* Modifica el color por default de los enlaces*/
+:link{color:blue;}
+
+
+/* Modifica el color por default de los enlaces visitados */
+:visited {color:green;}
+
+
+/* Resalta el contenido del elemento <a> cuando se le apunta con el mouse */
+a:hover {background-color:#acbfb9;}
+
+
+/*Los pseudoelementos seleccionan partes de un elemento. Por ejemplo, :first-letter, selecciona*/
+/*y configura la primera letra dentro de un <blockquote> determinado utilizando la siguiente
+regla:*/
+blockquote.letter1:first-letter {font-weight: bold; font-size: 135%;color:red;}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/*gallery1*/
+div.gallery1 {
+    border: 1px solid #ccc;
+}
+
+
+
+div.gallery1 img {
+    width: 50%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+	float:left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+	
+}
+.footer {color: #000000;
+	border: 3px solid #FDADED;
+font-family: Georgia, "Times New Roman", serif; 
+background-image:url( "images/Capture1.png");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+padding: 30px;
+}
+.fling-minislide {width:600px; height:300px;  position:relative; padding-left: 52px; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 35s infinite; opacity:0; width: 400px; height: 400px;}
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(8){animation-delay:0s;} 
+.fling-minislide img:nth-child(7){animation-delay:5s;}
+.fling-minislide img:nth-child(6){animation-delay:10s;}
+.fling-minislide img:nth-child(5){animation-delay:15s;}
+.fling-minislide img:nth-child(4){animation-delay:20s;}
+.fling-minislide img:nth-child(3){animation-delay:25s;}
+.fling-minislide img:nth-child(1){animation-delay:30s;}
+
+ #info {margin:1em auto; max-width: 1024px; display: block; column-count: 2;
+ column-gap: 2.5em; column-width:220px;}
