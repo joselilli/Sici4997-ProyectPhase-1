@@ -78,7 +78,13 @@ a {
 </head>
 <body>
 
-<form action="doLogin.php">
+<?php
+    
+    if(isset($_GET['e']) && $_GET['e']==1) {
+        echo 'Su usuario y/o contraseña estan incorrectos.';
+    }
+    ?>
+    <form action= "doLogin.php" method="post">
   <div class="container">
     <h1>Sign In</h1>
     <p>Please Enter Your Username and Password.</p>
